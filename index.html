@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Shop</title>
+    <!--------------- 
+        Link CSS 
+    ---------------->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-------------------- 
+        Link Bootstrap 
+    --------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!----------------------- 
+        Link Font Awosome 
+    ------------------------>
+    <script src="https://kit.fontawesome.com/511b012dd8.js" crossorigin="anonymous"></script>
+    <!--------------------- 
+        Link Google Font 
+    ---------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-danger p-2 text-dark bg-opacity-50">
+    <!------------------ 
+        Header Start 
+    ------------------->
+    <header>
+        <h1 class="text-center fw-bold text-white m-3"> <i class="fa-solid fa-phone"></i> Mobile Shop</h1>
+    </header>
+    <!------------------ 
+        Header End 
+    ------------------->
+    <!------------------------
+         Main Section Start 
+    ------------------------->
+    <main>
+        <section>
+            <div class="input-group mb-3 w-50 mx-auto">
+                <input id="input-text" type="text" class="form-control" placeholder="Search Your Favourite Mobile Name"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary btn btn-primary text-white" type="button"
+                    onclick="searchPhone()">Search</button>
+            </div>
+        </section>
+        <section>
+            <!-- Error Code -->
+            <h5 id="error" class="text-center text-white">
+
+            </h5>
+            <!-- Load Details -->
+            <div id="display-details" class="row">
+
+            </div>
+            <!-- Load Data -->
+            <div id="display-result" class="row">
+
+            </div>
+        </section>
+    </main>
+    <!------------------------
+         Main Section End 
+    ------------------------->
+
+    <!--------------------- 
+        Link JavaScript 
+    ---------------------->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
